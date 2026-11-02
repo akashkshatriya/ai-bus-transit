@@ -1,0 +1,1206 @@
+{
+  "belman_to_udupi|Bantakal|Early Morning|Weekday": {
+    "median_scheduled": 392,
+    "mean_scheduled": 389.6,
+    "min_scheduled": 368,
+    "max_scheduled": 408,
+    "count": 98
+  },
+  "belman_to_udupi|Bantakal|Early Morning|Weekend": {
+    "median_scheduled": 392,
+    "mean_scheduled": 389.7,
+    "min_scheduled": 369,
+    "max_scheduled": 408,
+    "count": 42
+  },
+  "belman_to_udupi|Bantakal|Evening Peak|Weekday": {
+    "median_scheduled": 1036,
+    "mean_scheduled": 1040.2,
+    "min_scheduled": 948,
+    "max_scheduled": 1127,
+    "count": 510
+  },
+  "belman_to_udupi|Bantakal|Evening Peak|Weekend": {
+    "median_scheduled": 1034,
+    "mean_scheduled": 1037.5,
+    "min_scheduled": 955,
+    "max_scheduled": 1126,
+    "count": 216
+  },
+  "belman_to_udupi|Bantakal|Midday|Weekday": {
+    "median_scheduled": 764,
+    "mean_scheduled": 770.2,
+    "min_scheduled": 589,
+    "max_scheduled": 950,
+    "count": 947
+  },
+  "belman_to_udupi|Bantakal|Midday|Weekend": {
+    "median_scheduled": 753,
+    "mean_scheduled": 764.0,
+    "min_scheduled": 587,
+    "max_scheduled": 951,
+    "count": 405
+  },
+  "belman_to_udupi|Bantakal|Morning Peak|Weekday": {
+    "median_scheduled": 513,
+    "mean_scheduled": 510.8,
+    "min_scheduled": 400,
+    "max_scheduled": 590,
+    "count": 433
+  },
+  "belman_to_udupi|Bantakal|Morning Peak|Weekend": {
+    "median_scheduled": 514,
+    "mean_scheduled": 511.5,
+    "min_scheduled": 416,
+    "max_scheduled": 591,
+    "count": 187
+  },
+  "belman_to_udupi|Bantakal|Night|Weekday": {
+    "median_scheduled": 1163,
+    "mean_scheduled": 1165.0,
+    "min_scheduled": 1126,
+    "max_scheduled": 1225,
+    "count": 203
+  },
+  "belman_to_udupi|Bantakal|Night|Weekend": {
+    "median_scheduled": 1169,
+    "mean_scheduled": 1168.4,
+    "min_scheduled": 1131,
+    "max_scheduled": 1208,
+    "count": 89
+  },
+  "belman_to_udupi|Belman|Early Morning|Weekday": {
+    "median_scheduled": 340,
+    "mean_scheduled": 340.8,
+    "min_scheduled": 326,
+    "max_scheduled": 418,
+    "count": 200
+  },
+  "belman_to_udupi|Belman|Early Morning|Weekend": {
+    "median_scheduled": 340,
+    "mean_scheduled": 341.2,
+    "min_scheduled": 327,
+    "max_scheduled": 418,
+    "count": 92
+  },
+  "belman_to_udupi|Belman|Evening Peak|Weekday": {
+    "median_scheduled": 1060,
+    "mean_scheduled": 1050.9,
+    "min_scheduled": 958,
+    "max_scheduled": 1139,
+    "count": 514
+  },
+  "belman_to_udupi|Belman|Evening Peak|Weekend": {
+    "median_scheduled": 1059,
+    "mean_scheduled": 1051.0,
+    "min_scheduled": 958,
+    "max_scheduled": 1139,
+    "count": 207
+  },
+  "belman_to_udupi|Belman|Midday|Weekday": {
+    "median_scheduled": 793,
+    "mean_scheduled": 780.1,
+    "min_scheduled": 593,
+    "max_scheduled": 959,
+    "count": 973
+  },
+  "belman_to_udupi|Belman|Midday|Weekend": {
+    "median_scheduled": 764,
+    "mean_scheduled": 779.5,
+    "min_scheduled": 598,
+    "max_scheduled": 955,
+    "count": 417
+  },
+  "belman_to_udupi|Belman|Morning Peak|Weekday": {
+    "median_scheduled": 510,
+    "mean_scheduled": 506.3,
+    "min_scheduled": 413,
+    "max_scheduled": 596,
+    "count": 440
+  },
+  "belman_to_udupi|Belman|Morning Peak|Weekend": {
+    "median_scheduled": 517,
+    "mean_scheduled": 509.9,
+    "min_scheduled": 415,
+    "max_scheduled": 597,
+    "count": 189
+  },
+  "belman_to_udupi|Belman|Night|Weekday": {
+    "median_scheduled": 1161,
+    "mean_scheduled": 1158.5,
+    "min_scheduled": 1142,
+    "max_scheduled": 1179,
+    "count": 64
+  },
+  "belman_to_udupi|Belman|Night|Weekend": {
+    "median_scheduled": 1165,
+    "mean_scheduled": 1158.4,
+    "min_scheduled": 1142,
+    "max_scheduled": 1172,
+    "count": 34
+  },
+  "belman_to_udupi|Jantra|Early Morning|Weekday": {
+    "median_scheduled": 352,
+    "mean_scheduled": 351.8,
+    "min_scheduled": 341,
+    "max_scheduled": 369,
+    "count": 193
+  },
+  "belman_to_udupi|Jantra|Early Morning|Weekend": {
+    "median_scheduled": 352,
+    "mean_scheduled": 353.5,
+    "min_scheduled": 340,
+    "max_scheduled": 376,
+    "count": 90
+  },
+  "belman_to_udupi|Jantra|Evening Peak|Weekday": {
+    "median_scheduled": 1064,
+    "mean_scheduled": 1051.4,
+    "min_scheduled": 958,
+    "max_scheduled": 1139,
+    "count": 516
+  },
+  "belman_to_udupi|Jantra|Evening Peak|Weekend": {
+    "median_scheduled": 1060,
+    "mean_scheduled": 1048.0,
+    "min_scheduled": 955,
+    "max_scheduled": 1139,
+    "count": 214
+  },
+  "belman_to_udupi|Jantra|Midday|Weekday": {
+    "median_scheduled": 779,
+    "mean_scheduled": 784.3,
+    "min_scheduled": 596,
+    "max_scheduled": 959,
+    "count": 946
+  },
+  "belman_to_udupi|Jantra|Midday|Weekend": {
+    "median_scheduled": 769,
+    "mean_scheduled": 779.3,
+    "min_scheduled": 593,
+    "max_scheduled": 959,
+    "count": 403
+  },
+  "belman_to_udupi|Jantra|Morning Peak|Weekday": {
+    "median_scheduled": 522,
+    "mean_scheduled": 517.0,
+    "min_scheduled": 423,
+    "max_scheduled": 599,
+    "count": 430
+  },
+  "belman_to_udupi|Jantra|Morning Peak|Weekend": {
+    "median_scheduled": 529,
+    "mean_scheduled": 519.4,
+    "min_scheduled": 428,
+    "max_scheduled": 599,
+    "count": 180
+  },
+  "belman_to_udupi|Jantra|Night|Weekday": {
+    "median_scheduled": 1162,
+    "mean_scheduled": 1163.3,
+    "min_scheduled": 1135,
+    "max_scheduled": 1202,
+    "count": 106
+  },
+  "belman_to_udupi|Jantra|Night|Weekend": {
+    "median_scheduled": 1164,
+    "mean_scheduled": 1164.7,
+    "min_scheduled": 1131,
+    "max_scheduled": 1188,
+    "count": 52
+  },
+  "belman_to_udupi|Katpadi|Early Morning|Weekday": {
+    "median_scheduled": 409,
+    "mean_scheduled": 409.5,
+    "min_scheduled": 407,
+    "max_scheduled": 416,
+    "count": 28
+  },
+  "belman_to_udupi|Katpadi|Early Morning|Weekend": {
+    "median_scheduled": 410,
+    "mean_scheduled": 410.7,
+    "min_scheduled": 406,
+    "max_scheduled": 417,
+    "count": 12
+  },
+  "belman_to_udupi|Katpadi|Evening Peak|Weekday": {
+    "median_scheduled": 1048,
+    "mean_scheduled": 1050.9,
+    "min_scheduled": 958,
+    "max_scheduled": 1139,
+    "count": 494
+  },
+  "belman_to_udupi|Katpadi|Evening Peak|Weekend": {
+    "median_scheduled": 1043,
+    "mean_scheduled": 1050.3,
+    "min_scheduled": 959,
+    "max_scheduled": 1139,
+    "count": 210
+  },
+  "belman_to_udupi|Katpadi|Midday|Weekday": {
+    "median_scheduled": 773,
+    "mean_scheduled": 781.4,
+    "min_scheduled": 593,
+    "max_scheduled": 955,
+    "count": 949
+  },
+  "belman_to_udupi|Katpadi|Midday|Weekend": {
+    "median_scheduled": 764,
+    "mean_scheduled": 774.7,
+    "min_scheduled": 597,
+    "max_scheduled": 954,
+    "count": 412
+  },
+  "belman_to_udupi|Katpadi|Morning Peak|Weekday": {
+    "median_scheduled": 529,
+    "mean_scheduled": 520.6,
+    "min_scheduled": 422,
+    "max_scheduled": 599,
+    "count": 433
+  },
+  "belman_to_udupi|Katpadi|Morning Peak|Weekend": {
+    "median_scheduled": 526,
+    "mean_scheduled": 519.6,
+    "min_scheduled": 416,
+    "max_scheduled": 598,
+    "count": 183
+  },
+  "belman_to_udupi|Katpadi|Night|Weekday": {
+    "median_scheduled": 1186,
+    "mean_scheduled": 1186.7,
+    "min_scheduled": 1130,
+    "max_scheduled": 1262,
+    "count": 287
+  },
+  "belman_to_udupi|Katpadi|Night|Weekend": {
+    "median_scheduled": 1190,
+    "mean_scheduled": 1190.3,
+    "min_scheduled": 1135,
+    "max_scheduled": 1250,
+    "count": 122
+  },
+  "belman_to_udupi|SMVITM|Early Morning|Weekday": {
+    "median_scheduled": 400,
+    "mean_scheduled": 396.2,
+    "min_scheduled": 375,
+    "max_scheduled": 411,
+    "count": 88
+  },
+  "belman_to_udupi|SMVITM|Early Morning|Weekend": {
+    "median_scheduled": 400,
+    "mean_scheduled": 396.6,
+    "min_scheduled": 377,
+    "max_scheduled": 412,
+    "count": 38
+  },
+  "belman_to_udupi|SMVITM|Evening Peak|Weekday": {
+    "median_scheduled": 1035,
+    "mean_scheduled": 1043.3,
+    "min_scheduled": 951,
+    "max_scheduled": 1132,
+    "count": 527
+  },
+  "belman_to_udupi|SMVITM|Evening Peak|Weekend": {
+    "median_scheduled": 1033,
+    "mean_scheduled": 1040.9,
+    "min_scheduled": 954,
+    "max_scheduled": 1130,
+    "count": 224
+  },
+  "belman_to_udupi|SMVITM|Midday|Weekday": {
+    "median_scheduled": 766,
+    "mean_scheduled": 772.7,
+    "min_scheduled": 591,
+    "max_scheduled": 950,
+    "count": 930
+  },
+  "belman_to_udupi|SMVITM|Midday|Weekend": {
+    "median_scheduled": 756,
+    "mean_scheduled": 764.2,
+    "min_scheduled": 590,
+    "max_scheduled": 943,
+    "count": 403
+  },
+  "belman_to_udupi|SMVITM|Morning Peak|Weekday": {
+    "median_scheduled": 519,
+    "mean_scheduled": 515.5,
+    "min_scheduled": 406,
+    "max_scheduled": 594,
+    "count": 439
+  },
+  "belman_to_udupi|SMVITM|Morning Peak|Weekend": {
+    "median_scheduled": 518,
+    "mean_scheduled": 514.2,
+    "min_scheduled": 410,
+    "max_scheduled": 592,
+    "count": 184
+  },
+  "belman_to_udupi|SMVITM|Night|Weekday": {
+    "median_scheduled": 1167,
+    "mean_scheduled": 1171.5,
+    "min_scheduled": 1129,
+    "max_scheduled": 1232,
+    "count": 207
+  },
+  "belman_to_udupi|SMVITM|Night|Weekend": {
+    "median_scheduled": 1176,
+    "mean_scheduled": 1175.4,
+    "min_scheduled": 1134,
+    "max_scheduled": 1217,
+    "count": 90
+  },
+  "belman_to_udupi|Shankarpura|Early Morning|Weekday": {
+    "median_scheduled": 402,
+    "mean_scheduled": 396.8,
+    "min_scheduled": 382,
+    "max_scheduled": 412,
+    "count": 61
+  },
+  "belman_to_udupi|Shankarpura|Early Morning|Weekend": {
+    "median_scheduled": 393,
+    "mean_scheduled": 395.0,
+    "min_scheduled": 383,
+    "max_scheduled": 409,
+    "count": 23
+  },
+  "belman_to_udupi|Shankarpura|Evening Peak|Weekday": {
+    "median_scheduled": 1040,
+    "mean_scheduled": 1047.3,
+    "min_scheduled": 949,
+    "max_scheduled": 1132,
+    "count": 519
+  },
+  "belman_to_udupi|Shankarpura|Evening Peak|Weekend": {
+    "median_scheduled": 1038,
+    "mean_scheduled": 1045.8,
+    "min_scheduled": 960,
+    "max_scheduled": 1132,
+    "count": 220
+  },
+  "belman_to_udupi|Shankarpura|Midday|Weekday": {
+    "median_scheduled": 762,
+    "mean_scheduled": 773.0,
+    "min_scheduled": 589,
+    "max_scheduled": 952,
+    "count": 956
+  },
+  "belman_to_udupi|Shankarpura|Midday|Weekend": {
+    "median_scheduled": 759,
+    "mean_scheduled": 766.7,
+    "min_scheduled": 595,
+    "max_scheduled": 948,
+    "count": 412
+  },
+  "belman_to_udupi|Shankarpura|Morning Peak|Weekday": {
+    "median_scheduled": 509,
+    "mean_scheduled": 510.6,
+    "min_scheduled": 410,
+    "max_scheduled": 592,
+    "count": 437
+  },
+  "belman_to_udupi|Shankarpura|Morning Peak|Weekend": {
+    "median_scheduled": 509,
+    "mean_scheduled": 508.9,
+    "min_scheduled": 410,
+    "max_scheduled": 589,
+    "count": 190
+  },
+  "belman_to_udupi|Shankarpura|Night|Weekday": {
+    "median_scheduled": 1169,
+    "mean_scheduled": 1175.6,
+    "min_scheduled": 1131,
+    "max_scheduled": 1237,
+    "count": 218
+  },
+  "belman_to_udupi|Shankarpura|Night|Weekend": {
+    "median_scheduled": 1181,
+    "mean_scheduled": 1179.7,
+    "min_scheduled": 1126,
+    "max_scheduled": 1223,
+    "count": 94
+  },
+  "belman_to_udupi|Shirva|Early Morning|Weekday": {
+    "median_scheduled": 384,
+    "mean_scheduled": 382.4,
+    "min_scheduled": 357,
+    "max_scheduled": 417,
+    "count": 104
+  },
+  "belman_to_udupi|Shirva|Early Morning|Weekend": {
+    "median_scheduled": 386,
+    "mean_scheduled": 383.8,
+    "min_scheduled": 359,
+    "max_scheduled": 419,
+    "count": 46
+  },
+  "belman_to_udupi|Shirva|Evening Peak|Weekday": {
+    "median_scheduled": 1044,
+    "mean_scheduled": 1047.9,
+    "min_scheduled": 957,
+    "max_scheduled": 1139,
+    "count": 537
+  },
+  "belman_to_udupi|Shirva|Evening Peak|Weekend": {
+    "median_scheduled": 1044,
+    "mean_scheduled": 1045.3,
+    "min_scheduled": 957,
+    "max_scheduled": 1135,
+    "count": 220
+  },
+  "belman_to_udupi|Shirva|Midday|Weekday": {
+    "median_scheduled": 772,
+    "mean_scheduled": 774.8,
+    "min_scheduled": 597,
+    "max_scheduled": 959,
+    "count": 947
+  },
+  "belman_to_udupi|Shirva|Midday|Weekend": {
+    "median_scheduled": 770,
+    "mean_scheduled": 773.3,
+    "min_scheduled": 600,
+    "max_scheduled": 959,
+    "count": 402
+  },
+  "belman_to_udupi|Shirva|Morning Peak|Weekday": {
+    "median_scheduled": 512,
+    "mean_scheduled": 510.1,
+    "min_scheduled": 414,
+    "max_scheduled": 598,
+    "count": 461
+  },
+  "belman_to_udupi|Shirva|Morning Peak|Weekend": {
+    "median_scheduled": 520,
+    "mean_scheduled": 513.5,
+    "min_scheduled": 420,
+    "max_scheduled": 595,
+    "count": 204
+  },
+  "belman_to_udupi|Shirva|Night|Weekday": {
+    "median_scheduled": 1163,
+    "mean_scheduled": 1167.9,
+    "min_scheduled": 1137,
+    "max_scheduled": 1214,
+    "count": 142
+  },
+  "belman_to_udupi|Shirva|Night|Weekend": {
+    "median_scheduled": 1170,
+    "mean_scheduled": 1170.0,
+    "min_scheduled": 1138,
+    "max_scheduled": 1200,
+    "count": 67
+  },
+  "belman_to_udupi|Subhasnagara|Early Morning|Weekday": {
+    "median_scheduled": 414,
+    "mean_scheduled": 412.4,
+    "min_scheduled": 391,
+    "max_scheduled": 438,
+    "count": 102
+  },
+  "belman_to_udupi|Subhasnagara|Early Morning|Weekend": {
+    "median_scheduled": 416,
+    "mean_scheduled": 412.9,
+    "min_scheduled": 389,
+    "max_scheduled": 444,
+    "count": 44
+  },
+  "belman_to_udupi|Subhasnagara|Evening Peak|Weekday": {
+    "median_scheduled": 1058,
+    "mean_scheduled": 1066.5,
+    "min_scheduled": 979,
+    "max_scheduled": 1163,
+    "count": 529
+  },
+  "belman_to_udupi|Subhasnagara|Evening Peak|Weekend": {
+    "median_scheduled": 1058,
+    "mean_scheduled": 1062.3,
+    "min_scheduled": 980,
+    "max_scheduled": 1156,
+    "count": 223
+  },
+  "belman_to_udupi|Subhasnagara|Midday|Weekday": {
+    "median_scheduled": 788,
+    "mean_scheduled": 794.2,
+    "min_scheduled": 615,
+    "max_scheduled": 982,
+    "count": 942
+  },
+  "belman_to_udupi|Subhasnagara|Midday|Weekend": {
+    "median_scheduled": 783,
+    "mean_scheduled": 790.6,
+    "min_scheduled": 613,
+    "max_scheduled": 986,
+    "count": 394
+  },
+  "belman_to_udupi|Subhasnagara|Morning Peak|Weekday": {
+    "median_scheduled": 533,
+    "mean_scheduled": 534.9,
+    "min_scheduled": 446,
+    "max_scheduled": 619,
+    "count": 442
+  },
+  "belman_to_udupi|Subhasnagara|Morning Peak|Weekend": {
+    "median_scheduled": 544,
+    "mean_scheduled": 538.9,
+    "min_scheduled": 444,
+    "max_scheduled": 618,
+    "count": 198
+  },
+  "belman_to_udupi|Subhasnagara|Night|Weekday": {
+    "median_scheduled": 1188,
+    "mean_scheduled": 1189.7,
+    "min_scheduled": 1152,
+    "max_scheduled": 1244,
+    "count": 176
+  },
+  "belman_to_udupi|Subhasnagara|Night|Weekend": {
+    "median_scheduled": 1188,
+    "mean_scheduled": 1192.5,
+    "min_scheduled": 1158,
+    "max_scheduled": 1231,
+    "count": 80
+  },
+  "belman_to_udupi|Udupi|Evening Peak|Weekday": {
+    "median_scheduled": 1043,
+    "mean_scheduled": 1045.4,
+    "min_scheduled": 956,
+    "max_scheduled": 1139,
+    "count": 474
+  },
+  "belman_to_udupi|Udupi|Evening Peak|Weekend": {
+    "median_scheduled": 1041,
+    "mean_scheduled": 1046.0,
+    "min_scheduled": 958,
+    "max_scheduled": 1137,
+    "count": 198
+  },
+  "belman_to_udupi|Udupi|Midday|Weekday": {
+    "median_scheduled": 772,
+    "mean_scheduled": 780.0,
+    "min_scheduled": 590,
+    "max_scheduled": 959,
+    "count": 947
+  },
+  "belman_to_udupi|Udupi|Midday|Weekend": {
+    "median_scheduled": 768,
+    "mean_scheduled": 774.1,
+    "min_scheduled": 599,
+    "max_scheduled": 958,
+    "count": 417
+  },
+  "belman_to_udupi|Udupi|Morning Peak|Weekday": {
+    "median_scheduled": 535,
+    "mean_scheduled": 521.8,
+    "min_scheduled": 423,
+    "max_scheduled": 599,
+    "count": 415
+  },
+  "belman_to_udupi|Udupi|Morning Peak|Weekend": {
+    "median_scheduled": 527,
+    "mean_scheduled": 519.6,
+    "min_scheduled": 421,
+    "max_scheduled": 599,
+    "count": 173
+  },
+  "belman_to_udupi|Udupi|Night|Weekday": {
+    "median_scheduled": 1191,
+    "mean_scheduled": 1192.6,
+    "min_scheduled": 1132,
+    "max_scheduled": 1280,
+    "count": 355
+  },
+  "belman_to_udupi|Udupi|Night|Weekend": {
+    "median_scheduled": 1194,
+    "mean_scheduled": 1195.5,
+    "min_scheduled": 1133,
+    "max_scheduled": 1266,
+    "count": 151
+  },
+  "udupi_to_belman|Bantakal|Early Morning|Weekday": {
+    "median_scheduled": 423,
+    "mean_scheduled": 422.1,
+    "min_scheduled": 414,
+    "max_scheduled": 430,
+    "count": 61
+  },
+  "udupi_to_belman|Bantakal|Early Morning|Weekend": {
+    "median_scheduled": 424,
+    "mean_scheduled": 423.0,
+    "min_scheduled": 416,
+    "max_scheduled": 431,
+    "count": 28
+  },
+  "udupi_to_belman|Bantakal|Evening Peak|Weekday": {
+    "median_scheduled": 1094,
+    "mean_scheduled": 1088.9,
+    "min_scheduled": 1029,
+    "max_scheduled": 1146,
+    "count": 234
+  },
+  "udupi_to_belman|Bantakal|Evening Peak|Weekend": {
+    "median_scheduled": 1103,
+    "mean_scheduled": 1090.8,
+    "min_scheduled": 1034,
+    "max_scheduled": 1145,
+    "count": 91
+  },
+  "udupi_to_belman|Bantakal|Midday|Weekday": {
+    "median_scheduled": 710,
+    "mean_scheduled": 756.0,
+    "min_scheduled": 610,
+    "max_scheduled": 928,
+    "count": 466
+  },
+  "udupi_to_belman|Bantakal|Midday|Weekend": {
+    "median_scheduled": 794,
+    "mean_scheduled": 763.5,
+    "min_scheduled": 611,
+    "max_scheduled": 921,
+    "count": 200
+  },
+  "udupi_to_belman|Bantakal|Morning Peak|Weekday": {
+    "median_scheduled": 523,
+    "mean_scheduled": 519.3,
+    "min_scheduled": 428,
+    "max_scheduled": 609,
+    "count": 811
+  },
+  "udupi_to_belman|Bantakal|Morning Peak|Weekend": {
+    "median_scheduled": 521,
+    "mean_scheduled": 516.7,
+    "min_scheduled": 424,
+    "max_scheduled": 601,
+    "count": 354
+  },
+  "udupi_to_belman|Bantakal|Night|Weekday": {
+    "median_scheduled": 1270,
+    "mean_scheduled": 1269.8,
+    "min_scheduled": 1144,
+    "max_scheduled": 1318,
+    "count": 129
+  },
+  "udupi_to_belman|Bantakal|Night|Weekend": {
+    "median_scheduled": 1272,
+    "mean_scheduled": 1271.7,
+    "min_scheduled": 1150,
+    "max_scheduled": 1317,
+    "count": 66
+  },
+  "udupi_to_belman|Belman|Evening Peak|Weekday": {
+    "median_scheduled": 1079,
+    "mean_scheduled": 1085.6,
+    "min_scheduled": 960,
+    "max_scheduled": 1131,
+    "count": 119
+  },
+  "udupi_to_belman|Belman|Evening Peak|Weekend": {
+    "median_scheduled": 1078,
+    "mean_scheduled": 1083.3,
+    "min_scheduled": 963,
+    "max_scheduled": 1128,
+    "count": 47
+  },
+  "udupi_to_belman|Belman|Midday|Weekday": {
+    "median_scheduled": 700,
+    "mean_scheduled": 744.2,
+    "min_scheduled": 595,
+    "max_scheduled": 959,
+    "count": 622
+  },
+  "udupi_to_belman|Belman|Midday|Weekend": {
+    "median_scheduled": 728,
+    "mean_scheduled": 754.6,
+    "min_scheduled": 598,
+    "max_scheduled": 959,
+    "count": 257
+  },
+  "udupi_to_belman|Belman|Morning Peak|Weekday": {
+    "median_scheduled": 536,
+    "mean_scheduled": 533.2,
+    "min_scheduled": 452,
+    "max_scheduled": 599,
+    "count": 714
+  },
+  "udupi_to_belman|Belman|Morning Peak|Weekend": {
+    "median_scheduled": 531,
+    "mean_scheduled": 532.6,
+    "min_scheduled": 454,
+    "max_scheduled": 599,
+    "count": 323
+  },
+  "udupi_to_belman|Belman|Night|Weekday": {
+    "median_scheduled": 1192,
+    "mean_scheduled": 1239.1,
+    "min_scheduled": 1139,
+    "max_scheduled": 1361,
+    "count": 246
+  },
+  "udupi_to_belman|Belman|Night|Weekend": {
+    "median_scheduled": 1296,
+    "mean_scheduled": 1250.2,
+    "min_scheduled": 1141,
+    "max_scheduled": 1358,
+    "count": 112
+  },
+  "udupi_to_belman|Jantra|Evening Peak|Weekday": {
+    "median_scheduled": 1077,
+    "mean_scheduled": 1088.8,
+    "min_scheduled": 1056,
+    "max_scheduled": 1139,
+    "count": 149
+  },
+  "udupi_to_belman|Jantra|Evening Peak|Weekend": {
+    "median_scheduled": 1082,
+    "mean_scheduled": 1090.1,
+    "min_scheduled": 1060,
+    "max_scheduled": 1136,
+    "count": 58
+  },
+  "udupi_to_belman|Jantra|Midday|Weekday": {
+    "median_scheduled": 721,
+    "mean_scheduled": 752.7,
+    "min_scheduled": 595,
+    "max_scheduled": 953,
+    "count": 553
+  },
+  "udupi_to_belman|Jantra|Midday|Weekend": {
+    "median_scheduled": 724,
+    "mean_scheduled": 764.3,
+    "min_scheduled": 597,
+    "max_scheduled": 950,
+    "count": 230
+  },
+  "udupi_to_belman|Jantra|Morning Peak|Weekday": {
+    "median_scheduled": 529,
+    "mean_scheduled": 527.7,
+    "min_scheduled": 436,
+    "max_scheduled": 599,
+    "count": 785
+  },
+  "udupi_to_belman|Jantra|Morning Peak|Weekend": {
+    "median_scheduled": 530,
+    "mean_scheduled": 526.9,
+    "min_scheduled": 441,
+    "max_scheduled": 599,
+    "count": 352
+  },
+  "udupi_to_belman|Jantra|Night|Weekday": {
+    "median_scheduled": 1283,
+    "mean_scheduled": 1239.8,
+    "min_scheduled": 1136,
+    "max_scheduled": 1345,
+    "count": 214
+  },
+  "udupi_to_belman|Jantra|Night|Weekend": {
+    "median_scheduled": 1286,
+    "mean_scheduled": 1250.7,
+    "min_scheduled": 1139,
+    "max_scheduled": 1345,
+    "count": 99
+  },
+  "udupi_to_belman|Katpadi|Early Morning|Weekday": {
+    "median_scheduled": 391,
+    "mean_scheduled": 392.4,
+    "min_scheduled": 375,
+    "max_scheduled": 419,
+    "count": 132
+  },
+  "udupi_to_belman|Katpadi|Early Morning|Weekend": {
+    "median_scheduled": 390,
+    "mean_scheduled": 391.1,
+    "min_scheduled": 373,
+    "max_scheduled": 418,
+    "count": 60
+  },
+  "udupi_to_belman|Katpadi|Evening Peak|Weekday": {
+    "median_scheduled": 1065,
+    "mean_scheduled": 1052.7,
+    "min_scheduled": 992,
+    "max_scheduled": 1114,
+    "count": 243
+  },
+  "udupi_to_belman|Katpadi|Evening Peak|Weekend": {
+    "median_scheduled": 1066,
+    "mean_scheduled": 1054.9,
+    "min_scheduled": 996,
+    "max_scheduled": 1112,
+    "count": 95
+  },
+  "udupi_to_belman|Katpadi|Midday|Weekday": {
+    "median_scheduled": 760,
+    "mean_scheduled": 740.8,
+    "min_scheduled": 595,
+    "max_scheduled": 885,
+    "count": 394
+  },
+  "udupi_to_belman|Katpadi|Midday|Weekend": {
+    "median_scheduled": 774,
+    "mean_scheduled": 743.0,
+    "min_scheduled": 598,
+    "max_scheduled": 881,
+    "count": 177
+  },
+  "udupi_to_belman|Katpadi|Morning Peak|Weekday": {
+    "median_scheduled": 494,
+    "mean_scheduled": 497.3,
+    "min_scheduled": 414,
+    "max_scheduled": 598,
+    "count": 812
+  },
+  "udupi_to_belman|Katpadi|Morning Peak|Weekend": {
+    "median_scheduled": 491,
+    "mean_scheduled": 492.6,
+    "min_scheduled": 414,
+    "max_scheduled": 598,
+    "count": 345
+  },
+  "udupi_to_belman|Katpadi|Night|Weekday": {
+    "median_scheduled": 1232,
+    "mean_scheduled": 1239.1,
+    "min_scheduled": 1212,
+    "max_scheduled": 1278,
+    "count": 120
+  },
+  "udupi_to_belman|Katpadi|Night|Weekend": {
+    "median_scheduled": 1231,
+    "mean_scheduled": 1239.3,
+    "min_scheduled": 1211,
+    "max_scheduled": 1273,
+    "count": 62
+  },
+  "udupi_to_belman|SMVITM|Early Morning|Weekday": {
+    "median_scheduled": 416,
+    "mean_scheduled": 415.6,
+    "min_scheduled": 403,
+    "max_scheduled": 425,
+    "count": 96
+  },
+  "udupi_to_belman|SMVITM|Early Morning|Weekend": {
+    "median_scheduled": 416,
+    "mean_scheduled": 415.8,
+    "min_scheduled": 405,
+    "max_scheduled": 424,
+    "count": 44
+  },
+  "udupi_to_belman|SMVITM|Evening Peak|Weekday": {
+    "median_scheduled": 1093,
+    "mean_scheduled": 1081.2,
+    "min_scheduled": 1019,
+    "max_scheduled": 1141,
+    "count": 241
+  },
+  "udupi_to_belman|SMVITM|Evening Peak|Weekend": {
+    "median_scheduled": 1094,
+    "mean_scheduled": 1081.4,
+    "min_scheduled": 1024,
+    "max_scheduled": 1133,
+    "count": 91
+  },
+  "udupi_to_belman|SMVITM|Midday|Weekday": {
+    "median_scheduled": 700,
+    "mean_scheduled": 746.8,
+    "min_scheduled": 604,
+    "max_scheduled": 918,
+    "count": 465
+  },
+  "udupi_to_belman|SMVITM|Midday|Weekend": {
+    "median_scheduled": 785,
+    "mean_scheduled": 755.6,
+    "min_scheduled": 610,
+    "max_scheduled": 912,
+    "count": 198
+  },
+  "udupi_to_belman|SMVITM|Morning Peak|Weekday": {
+    "median_scheduled": 516,
+    "mean_scheduled": 513.9,
+    "min_scheduled": 419,
+    "max_scheduled": 600,
+    "count": 777
+  },
+  "udupi_to_belman|SMVITM|Morning Peak|Weekend": {
+    "median_scheduled": 514,
+    "mean_scheduled": 511.9,
+    "min_scheduled": 417,
+    "max_scheduled": 602,
+    "count": 340
+  },
+  "udupi_to_belman|SMVITM|Night|Weekday": {
+    "median_scheduled": 1262,
+    "mean_scheduled": 1267.2,
+    "min_scheduled": 1142,
+    "max_scheduled": 1308,
+    "count": 122
+  },
+  "udupi_to_belman|SMVITM|Night|Weekend": {
+    "median_scheduled": 1263,
+    "mean_scheduled": 1262.2,
+    "min_scheduled": 1142,
+    "max_scheduled": 1306,
+    "count": 66
+  },
+  "udupi_to_belman|Shankarpura|Early Morning|Weekday": {
+    "median_scheduled": 411,
+    "mean_scheduled": 412.0,
+    "min_scheduled": 399,
+    "max_scheduled": 428,
+    "count": 109
+  },
+  "udupi_to_belman|Shankarpura|Early Morning|Weekend": {
+    "median_scheduled": 412,
+    "mean_scheduled": 412.2,
+    "min_scheduled": 398,
+    "max_scheduled": 425,
+    "count": 53
+  },
+  "udupi_to_belman|Shankarpura|Evening Peak|Weekday": {
+    "median_scheduled": 1090,
+    "mean_scheduled": 1077.2,
+    "min_scheduled": 1016,
+    "max_scheduled": 1141,
+    "count": 243
+  },
+  "udupi_to_belman|Shankarpura|Evening Peak|Weekend": {
+    "median_scheduled": 1090,
+    "mean_scheduled": 1079.5,
+    "min_scheduled": 1018,
+    "max_scheduled": 1140,
+    "count": 95
+  },
+  "udupi_to_belman|Shankarpura|Midday|Weekday": {
+    "median_scheduled": 696,
+    "mean_scheduled": 743.4,
+    "min_scheduled": 606,
+    "max_scheduled": 912,
+    "count": 461
+  },
+  "udupi_to_belman|Shankarpura|Midday|Weekend": {
+    "median_scheduled": 781,
+    "mean_scheduled": 751.9,
+    "min_scheduled": 607,
+    "max_scheduled": 908,
+    "count": 197
+  },
+  "udupi_to_belman|Shankarpura|Morning Peak|Weekday": {
+    "median_scheduled": 512,
+    "mean_scheduled": 510.8,
+    "min_scheduled": 415,
+    "max_scheduled": 607,
+    "count": 768
+  },
+  "udupi_to_belman|Shankarpura|Morning Peak|Weekend": {
+    "median_scheduled": 510,
+    "mean_scheduled": 509.3,
+    "min_scheduled": 432,
+    "max_scheduled": 604,
+    "count": 332
+  },
+  "udupi_to_belman|Shankarpura|Night|Weekday": {
+    "median_scheduled": 1258,
+    "mean_scheduled": 1264.9,
+    "min_scheduled": 1239,
+    "max_scheduled": 1303,
+    "count": 120
+  },
+  "udupi_to_belman|Shankarpura|Night|Weekend": {
+    "median_scheduled": 1259,
+    "mean_scheduled": 1265.5,
+    "min_scheduled": 1238,
+    "max_scheduled": 1302,
+    "count": 62
+  },
+  "udupi_to_belman|Shirva|Evening Peak|Weekday": {
+    "median_scheduled": 1084,
+    "mean_scheduled": 1087.0,
+    "min_scheduled": 1041,
+    "max_scheduled": 1138,
+    "count": 186
+  },
+  "udupi_to_belman|Shirva|Evening Peak|Weekend": {
+    "median_scheduled": 1084,
+    "mean_scheduled": 1086.8,
+    "min_scheduled": 1044,
+    "max_scheduled": 1139,
+    "count": 70
+  },
+  "udupi_to_belman|Shirva|Midday|Weekday": {
+    "median_scheduled": 709,
+    "mean_scheduled": 749.3,
+    "min_scheduled": 592,
+    "max_scheduled": 939,
+    "count": 521
+  },
+  "udupi_to_belman|Shirva|Midday|Weekend": {
+    "median_scheduled": 709,
+    "mean_scheduled": 758.5,
+    "min_scheduled": 597,
+    "max_scheduled": 932,
+    "count": 220
+  },
+  "udupi_to_belman|Shirva|Morning Peak|Weekday": {
+    "median_scheduled": 522,
+    "mean_scheduled": 517.2,
+    "min_scheduled": 423,
+    "max_scheduled": 598,
+    "count": 817
+  },
+  "udupi_to_belman|Shirva|Morning Peak|Weekend": {
+    "median_scheduled": 522,
+    "mean_scheduled": 515.6,
+    "min_scheduled": 425,
+    "max_scheduled": 598,
+    "count": 362
+  },
+  "udupi_to_belman|Shirva|Night|Weekday": {
+    "median_scheduled": 1274,
+    "mean_scheduled": 1244.3,
+    "min_scheduled": 1134,
+    "max_scheduled": 1328,
+    "count": 177
+  },
+  "udupi_to_belman|Shirva|Night|Weekend": {
+    "median_scheduled": 1279,
+    "mean_scheduled": 1250.0,
+    "min_scheduled": 1133,
+    "max_scheduled": 1328,
+    "count": 87
+  },
+  "udupi_to_belman|Subhasnagara|Early Morning|Weekday": {
+    "median_scheduled": 398,
+    "mean_scheduled": 396.8,
+    "min_scheduled": 392,
+    "max_scheduled": 398,
+    "count": 12
+  },
+  "udupi_to_belman|Subhasnagara|Early Morning|Weekend": {
+    "median_scheduled": 398,
+    "mean_scheduled": 397.4,
+    "min_scheduled": 396,
+    "max_scheduled": 398,
+    "count": 9
+  },
+  "udupi_to_belman|Subhasnagara|Evening Peak|Weekday": {
+    "median_scheduled": 1060,
+    "mean_scheduled": 1064.0,
+    "min_scheduled": 1008,
+    "max_scheduled": 1119,
+    "count": 219
+  },
+  "udupi_to_belman|Subhasnagara|Evening Peak|Weekend": {
+    "median_scheduled": 1055,
+    "mean_scheduled": 1063.4,
+    "min_scheduled": 1012,
+    "max_scheduled": 1119,
+    "count": 81
+  },
+  "udupi_to_belman|Subhasnagara|Midday|Weekday": {
+    "median_scheduled": 683,
+    "mean_scheduled": 731.9,
+    "min_scheduled": 572,
+    "max_scheduled": 902,
+    "count": 474
+  },
+  "udupi_to_belman|Subhasnagara|Midday|Weekend": {
+    "median_scheduled": 774,
+    "mean_scheduled": 740.4,
+    "min_scheduled": 577,
+    "max_scheduled": 898,
+    "count": 202
+  },
+  "udupi_to_belman|Subhasnagara|Morning Peak|Weekday": {
+    "median_scheduled": 496,
+    "mean_scheduled": 491.0,
+    "min_scheduled": 393,
+    "max_scheduled": 577,
+    "count": 852
+  },
+  "udupi_to_belman|Subhasnagara|Morning Peak|Weekend": {
+    "median_scheduled": 497,
+    "mean_scheduled": 489.4,
+    "min_scheduled": 389,
+    "max_scheduled": 575,
+    "count": 371
+  },
+  "udupi_to_belman|Subhasnagara|Night|Weekday": {
+    "median_scheduled": 1249,
+    "mean_scheduled": 1234.8,
+    "min_scheduled": 1117,
+    "max_scheduled": 1295,
+    "count": 144
+  },
+  "udupi_to_belman|Subhasnagara|Night|Weekend": {
+    "median_scheduled": 1249,
+    "mean_scheduled": 1232.8,
+    "min_scheduled": 1115,
+    "max_scheduled": 1293,
+    "count": 76
+  },
+  "udupi_to_belman|Udupi|Early Morning|Weekday": {
+    "median_scheduled": 376,
+    "mean_scheduled": 384.6,
+    "min_scheduled": 349,
+    "max_scheduled": 418,
+    "count": 191
+  },
+  "udupi_to_belman|Udupi|Early Morning|Weekend": {
+    "median_scheduled": 376,
+    "mean_scheduled": 384.8,
+    "min_scheduled": 354,
+    "max_scheduled": 419,
+    "count": 89
+  },
+  "udupi_to_belman|Udupi|Evening Peak|Weekday": {
+    "median_scheduled": 1044,
+    "mean_scheduled": 1033.7,
+    "min_scheduled": 970,
+    "max_scheduled": 1095,
+    "count": 243
+  },
+  "udupi_to_belman|Udupi|Evening Peak|Weekend": {
+    "median_scheduled": 1045,
+    "mean_scheduled": 1035.8,
+    "min_scheduled": 977,
+    "max_scheduled": 1095,
+    "count": 95
+  },
+  "udupi_to_belman|Udupi|Midday|Weekday": {
+    "median_scheduled": 758,
+    "mean_scheduled": 737.8,
+    "min_scheduled": 595,
+    "max_scheduled": 860,
+    "count": 350
+  },
+  "udupi_to_belman|Udupi|Midday|Weekend": {
+    "median_scheduled": 763,
+    "mean_scheduled": 742.9,
+    "min_scheduled": 601,
+    "max_scheduled": 861,
+    "count": 155
+  },
+  "udupi_to_belman|Udupi|Morning Peak|Weekday": {
+    "median_scheduled": 482,
+    "mean_scheduled": 489.5,
+    "min_scheduled": 408,
+    "max_scheduled": 598,
+    "count": 797
+  },
+  "udupi_to_belman|Udupi|Morning Peak|Weekend": {
+    "median_scheduled": 478,
+    "mean_scheduled": 486.8,
+    "min_scheduled": 414,
+    "max_scheduled": 597,
+    "count": 338
+  },
+  "udupi_to_belman|Udupi|Night|Weekday": {
+    "median_scheduled": 1215,
+    "mean_scheduled": 1221.3,
+    "min_scheduled": 1194,
+    "max_scheduled": 1260,
+    "count": 120
+  },
+  "udupi_to_belman|Udupi|Night|Weekend": {
+    "median_scheduled": 1214,
+    "mean_scheduled": 1220.5,
+    "min_scheduled": 1193,
+    "max_scheduled": 1256,
+    "count": 62
+  }
+}

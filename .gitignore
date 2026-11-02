@@ -1,0 +1,9 @@
+backend/.env
+backend/bus_tracker.db
+backend/bus_tracker.db.bak
+*.db
+backend/.venv/
+**/__pycache__/
+frontend/node_modules/
+frontend/dist/
+

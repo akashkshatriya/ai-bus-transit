@@ -1,0 +1,137 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+@import "@fontsource-variable/dm-sans";
+@import "@fontsource-variable/inter";
+
+@theme {
+  --color-*: initial;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-white: #FFFFFF;
+  --color-primary: #737B52;
+  --color-primary-hover: #5D6542;
+  --color-sage: #A3AD8A;
+  --color-sage-light: #DDE2D0;
+  --color-olive-deep: #424936;
+  --color-surface: #FAF9F6;
+  --color-cream: #F0EDE4;
+  --color-beige: #D8D0BE;
+  --color-ink: #30332C;
+  --color-ink-soft: #686B60;
+  --color-field: #FFFFFF;
+  --color-btn-secondary: #E8E9DF;
+  --font-heading: "DM Sans Variable", system-ui, sans-serif;
+  --font-sans: "Inter Variable", system-ui, sans-serif;
+  --radius-card: 16px;
+  --radius-btn: 12px;
+  --shadow-soft: 0 1px 2px rgb(66 73 54 / .06), 0 8px 24px rgb(66 73 54 / .08);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--color-olive-deep);
+    font-weight: 600;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid #424936;
+  outline-offset: 2px;
+}
+
+/* Glass panel utility */
+.glass-panel {
+  background: rgba(240, 237, 228, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--color-beige);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF9F6;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8D0BE;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A3AD8A;
+}
+
+/* Leaflet popups & controls restyling */
+.leaflet-popup-content-wrapper {
+  background: #F0EDE4 !important;
+  color: #30332C !important;
+  border: 1px solid #D8D0BE !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 16px rgba(66, 73, 54, 0.12) !important;
+}
+.leaflet-popup-tip {
+  background: #F0EDE4 !important;
+  border: 1px solid #D8D0BE !important;
+}
+.leaflet-container {
+  font-family: "Inter Variable", system-ui, sans-serif !important;
+}
+.leaflet-bar a {
+  background-color: #FAF9F6 !important;
+  color: #424936 !important;
+  border-bottom: 1px solid #D8D0BE !important;
+}
+.leaflet-bar a:hover {
+  background-color: #F0EDE4 !important;
+  color: #737B52 !important;
+}
+
+/* ── Toast animations ─────────────────────────────────────────────────────── */
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(100%); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes toastProgress {
+  from { width: 100%; }
+  to   { width: 0%; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.animate-toastProgress {
+  animation: toastProgress 4s linear forwards;
+}
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease forwards;
+}
+
+/* Prefers-reduced-motion handling */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
