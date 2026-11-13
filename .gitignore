@@ -1,9 +1,56 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+backend/.venv/
+
+# ── Secrets & local config ────────────────────────────────────────────────────
+# NEVER commit .env files — they contain SECRET_KEY and credentials
 backend/.env
+frontend/.env
+frontend/.env.local
+# .env.production and .env.example ARE committed (they have no secrets)
+
+# ── Databases ─────────────────────────────────────────────────────────────────
+*.db
+*.db-shm
+*.db-wal
+*.db.bak
 backend/bus_tracker.db
 backend/bus_tracker.db.bak
-*.db
-backend/.venv/
-**/__pycache__/
+
+# ── Node / Frontend ──────────────────────────────────────────────────────────
+node_modules/
 frontend/node_modules/
 frontend/dist/
 
+# ── ML artefacts that are LARGE (keep .pkl files — they're needed for Render) ─
+# Uncomment if you switch to storing models in cloud storage instead:
+# backend/models/*.pkl
+
+# ── IDE & OS ──────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+
+# ── Android / Capacitor ───────────────────────────────────────────────────────
+frontend/android/app/build/
+frontend/android/.gradle/
+frontend/android/local.properties
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log

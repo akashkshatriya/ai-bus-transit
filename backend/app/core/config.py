@@ -15,7 +15,14 @@ class Settings(BaseSettings):
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24  # 24 hours
     DATABASE_URL: str = "sqlite:///./bus_tracker.db"
-    CORS_ORIGINS: Union[list[str], str] = ["http://localhost:5173", "capacitor://localhost", "http://localhost"]
+    # CORS_ORIGINS accepts a comma-separated string or JSON array string.
+    # In production set:
+    #   CORS_ORIGINS=https://your-app.vercel.app,capacitor://localhost
+    CORS_ORIGINS: Union[list[str], str] = [
+        "http://localhost:5173",
+        "capacitor://localhost",
+        "http://localhost",
+    ]
 
     @field_validator("CORS_ORIGINS", mode="before")
     @classmethod
@@ -44,10 +51,13 @@ settings = Settings()
 if settings.SECRET_KEY == DEFAULT_SECRET_KEY:
     raise ValueError(
         "Insecure SECRET_KEY: SECRET_KEY cannot match the hard-coded default value. "
-        "Please generate a secure secret key and set SECRET_KEY in your .env file."
+        "Please generate a secure secret key and set SECRET_KEY in your .env file.\n"
+        "Run: python -c \"import secrets; print(secrets.token_urlsafe(48))\""
     )
 if len(settings.SECRET_KEY) < 32:
     raise ValueError(
-        f"Insecure SECRET_KEY: SECRET_KEY must be at least 32 characters long (current length is {len(settings.SECRET_KEY)})."
+        f"Insecure SECRET_KEY: SECRET_KEY must be at least 32 characters long "
+        f"(current length is {len(settings.SECRET_KEY)})."
     )
+
 

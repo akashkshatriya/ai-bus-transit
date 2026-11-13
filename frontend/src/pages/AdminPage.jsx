@@ -20,6 +20,10 @@ export const AdminPage = () => {
   // ── Driver List State ──────────────────────────────────────────────────────
   const [drivers, setDrivers] = useState([]);
   const [isLoadingDrivers, setIsLoadingDrivers] = useState(true);
+  // UI helpers for per‑driver actions
+  const [resetId, setResetId] = useState(null);
+  const [newPwd, setNewPwd] = useState('');
+  const [actionLoadingId, setActionLoadingId] = useState(null); // driver id currently processing
 
   const fetchDrivers = useCallback(async () => {
     setIsLoadingDrivers(true);
@@ -41,40 +45,26 @@ export const AdminPage = () => {
 
   const handleCreateDriver = async (e) => {
     e.preventDefault();
-
     const trimmedName = name.trim();
     const trimmedEmail = email.trim();
-
     if (!trimmedName) {
       showToast('Please enter the driver full name.', 'error');
       return;
     }
-
     if (!trimmedEmail) {
       showToast('Please enter a valid driver email.', 'error');
       return;
     }
-
     if (!password || password.length < 8) {
       showToast('Password must be at least 8 characters long.', 'error');
       return;
     }
-
     setIsSubmitting(true);
-
     try {
-      const payload = {
-        name: trimmedName,
-        email: trimmedEmail,
-        password: password,
-      };
-
+      const payload = { name: trimmedName, email: trimmedEmail, password };
       const response = await api.post('/api/v1/admin/drivers', payload);
       const created = response.data;
-
       showToast(`Driver account created for ${created.email}.`, 'success');
-
-      // Clear the form and refresh driver list
       setName('');
       setEmail('');
       setPassword('');
@@ -94,6 +84,55 @@ export const AdminPage = () => {
       showToast(msg, 'error');
     } finally {
       setIsSubmitting(false);
+    }
+  };
+
+  // ── Per‑driver admin actions ────────────────────────────────────────────────
+  const handleDisable = async (driver) => {
+    setActionLoadingId(driver.id);
+    try {
+      await api.post(`/api/v1/admin/drivers/${driver.id}/disable`);
+      showToast(`Driver ${driver.email} disabled.`, 'success');
+      fetchDrivers();
+    } catch (err) {
+      const msg = err.response?.data?.detail || err.message || 'Failed to disable driver.';
+      showToast(msg, 'error');
+    } finally {
+      setActionLoadingId(null);
+    }
+  };
+
+  const handleEnable = async (driver) => {
+    setActionLoadingId(driver.id);
+    try {
+      await api.post(`/api/v1/admin/drivers/${driver.id}/enable`);
+      showToast(`Driver ${driver.email} enabled.`, 'success');
+      fetchDrivers();
+    } catch (err) {
+      const msg = err.response?.data?.detail || err.message || 'Failed to enable driver.';
+      showToast(msg, 'error');
+    } finally {
+      setActionLoadingId(null);
+    }
+  };
+
+  const handleResetPassword = async (driver) => {
+    if (!newPwd || newPwd.length < 8) {
+      showToast('New password must be at least 8 characters.', 'error');
+      return;
+    }
+    setActionLoadingId(driver.id);
+    try {
+      await api.post(`/api/v1/admin/drivers/${driver.id}/reset-password`, { new_password: newPwd });
+      showToast(`Password reset for ${driver.email}.`, 'success');
+      setResetId(null);
+      setNewPwd('');
+      fetchDrivers();
+    } catch (err) {
+      const msg = err.response?.data?.detail || err.message || 'Failed to reset password.';
+      showToast(msg, 'error');
+    } finally {
+      setActionLoadingId(null);
     }
   };
 
@@ -120,10 +159,7 @@ export const AdminPage = () => {
         <Card title="Create New Driver">
           <form onSubmit={handleCreateDriver} className="space-y-4">
             <div>
-              <label
-                htmlFor="driver-name"
-                className="block text-xs font-semibold text-olive-deep uppercase tracking-wider mb-1.5"
-              >
+              <label htmlFor="driver-name" className="block text-xs font-semibold text-olive-deep uppercase tracking-wider mb-1.5">
                 Full Name
               </label>
               <input
@@ -138,10 +174,7 @@ export const AdminPage = () => {
             </div>
 
             <div>
-              <label
-                htmlFor="driver-email"
-                className="block text-xs font-semibold text-olive-deep uppercase tracking-wider mb-1.5"
-              >
+              <label htmlFor="driver-email" className="block text-xs font-semibold text-olive-deep uppercase tracking-wider mb-1.5">
                 Driver Email
               </label>
               <input
@@ -156,10 +189,7 @@ export const AdminPage = () => {
             </div>
 
             <div>
-              <label
-                htmlFor="driver-password"
-                className="block text-xs font-semibold text-olive-deep uppercase tracking-wider mb-1.5"
-              >
+              <label htmlFor="driver-password" className="block text-xs font-semibold text-olive-deep uppercase tracking-wider mb-1.5">
                 Temporary Password
               </label>
               <div className="relative">
@@ -223,10 +253,70 @@ export const AdminPage = () => {
                   <div className="min-w-0 flex-1">
                     <p className="font-semibold text-sm text-olive-deep truncate">{d.name}</p>
                     <p className="text-xs text-ink-soft truncate">{d.email}</p>
+                    <p className="text-xs mt-0.5">
+                      <span className="px-2.5 py-0.5 bg-sage-light border border-primary text-olive-deep rounded-full text-xs font-mono font-semibold uppercase shrink-0">
+                        {d.role === 'disabled' ? 'Disabled' : 'Driver'}
+                      </span>
+                    </p>
                   </div>
-                  <span className="px-2.5 py-0.5 bg-sage-light border border-primary text-olive-deep rounded-full text-xs font-mono font-semibold uppercase shrink-0">
-                    Driver
-                  </span>
+                  <div className="flex items-center gap-1">
+                    {/* Enable / Disable button */}
+                    {d.role === 'driver' && (
+                      <Button
+                        size="xs"
+                        onClick={() => { if (window.confirm('Disable this driver?')) handleDisable(d); }}
+                        disabled={actionLoadingId === d.id}
+                        className="bg-rose-600 hover:bg-rose-700 text-white"
+                      >
+                        Disable
+                      </Button>
+                    )}
+                    {d.role === 'disabled' && (
+                      <Button
+                        size="xs"
+                        onClick={() => { if (window.confirm('Enable this driver?')) handleEnable(d); }}
+                        disabled={actionLoadingId === d.id}
+                        className="bg-emerald-600 hover:bg-emerald-700 text-white"
+                      >
+                        Enable
+                      </Button>
+                    )}
+                    {/* Reset password */}
+                    {resetId === d.id ? (
+                      <div className="flex items-center gap-1">
+                        <input
+                          type="password"
+                          placeholder="New password"
+                          value={newPwd}
+                          onChange={(e) => setNewPwd(e.target.value)}
+                          className="h-8 px-2 text-xs border rounded"
+                        />
+                        <Button
+                          size="xs"
+                          onClick={() => handleResetPassword(d)}
+                          disabled={actionLoadingId === d.id}
+                          className="bg-blue-600 hover:bg-blue-700 text-white"
+                        >
+                          Save
+                        </Button>
+                        <Button
+                          size="xs"
+                          onClick={() => { setResetId(null); setNewPwd(''); }}
+                          className="bg-gray-400 hover:bg-gray-500 text-black"
+                        >
+                          Cancel
+                        </Button>
+                      </div>
+                    ) : (
+                      <Button
+                        size="xs"
+                        onClick={() => setResetId(d.id)}
+                        className="bg-yellow-600 hover:bg-yellow-700 text-white"
+                      >
+                        Reset PW
+                      </Button>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>
@@ -238,4 +328,3 @@ export const AdminPage = () => {
 };
 
 export default AdminPage;
-

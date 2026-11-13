@@ -430,6 +430,7 @@ function PredictionTab() {
               </>
             )}
           </Button>
+
         </div>
       </Card>
 
@@ -964,6 +965,7 @@ export const PassengerPage = () => {
           >
             Logout
           </Button>
+
         </div>
       </div>
 

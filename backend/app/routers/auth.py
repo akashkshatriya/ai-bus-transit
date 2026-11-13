@@ -51,7 +51,13 @@ def login(login_in: UserLogin, db: Session = Depends(get_db)):
             detail="Incorrect email or password",
             headers={"WWW-Authenticate": "Bearer"},
         )
-    
+    # Block disabled accounts
+    if user.role == "disabled":
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Account disabled. Contact the administrator.",
+        )
+
     access_token = create_access_token(subject=user.id, role=user.role)
     return Token(
         access_token=access_token,
