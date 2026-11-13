@@ -1,8 +1,8 @@
-﻿// Dynamic API and WebSocket Base URLs
+// Dynamic API and WebSocket Base URLs
 // Automatically resolves to current device/host IP (e.g. 192.168.x.x or localhost)
 
 export const getApiBaseUrl = () => {
-  const envUrl = import.meta.env.VITE_API_BASE_URL;
+  const envUrl = import.meta.env.VITE_API_BASE_URL || import.meta.env.VITE_API_URL;
   if (envUrl && !envUrl.includes('localhost') && !envUrl.includes('127.0.0.1')) {
     return envUrl;
   }
@@ -12,7 +12,7 @@ export const getApiBaseUrl = () => {
 };
 
 export const getWsBaseUrl = () => {
-  const envWsUrl = import.meta.env.VITE_WS_BASE_URL;
+  const envWsUrl = import.meta.env.VITE_WS_BASE_URL || import.meta.env.VITE_WS_URL;
   if (envWsUrl && !envWsUrl.includes('localhost') && !envWsUrl.includes('127.0.0.1')) {
     return envWsUrl;
   }
