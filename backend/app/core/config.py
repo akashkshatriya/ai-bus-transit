@@ -25,7 +25,7 @@ class Settings(BaseSettings):
     ]
     # Comma-separated list of emails that automatically receive the admin role
     ADMIN_EMAILS: str = "admin@bustracker.com,akashkshatriya918@gmail.com,akasha.23cs009@sode-edu.in"
-    ADMIN_DEFAULT_PASSWORD: str = "Admin@12345678"
+    ADMIN_DEFAULT_PASSWORD: str = "AdminSecurePass2026!"
 
     @field_validator("CORS_ORIGINS", mode="before")
     @classmethod

@@ -15,21 +15,20 @@ def seed_admin():
     from app.core.security import get_password_hash
     db = SessionLocal()
     try:
-        admin_exists = db.query(User).filter(User.role == "admin").first()
-        if not admin_exists:
-            default_admin_email = "admin@bustracker.com"
-            existing = db.query(User).filter(User.email == default_admin_email).first()
-            if existing:
-                existing.role = "admin"
-            else:
-                new_admin = User(
-                    name="System Admin",
-                    email=default_admin_email,
-                    hashed_password=get_password_hash(settings.ADMIN_DEFAULT_PASSWORD),
-                    role="admin",
-                )
-                db.add(new_admin)
-            db.commit()
+        default_admin_email = "admin@bustracker.com"
+        admin = db.query(User).filter(User.email == default_admin_email).first()
+        if admin:
+            admin.role = "admin"
+            admin.hashed_password = get_password_hash(settings.ADMIN_DEFAULT_PASSWORD)
+        else:
+            new_admin = User(
+                name="System Admin",
+                email=default_admin_email,
+                hashed_password=get_password_hash(settings.ADMIN_DEFAULT_PASSWORD),
+                role="admin",
+            )
+            db.add(new_admin)
+        db.commit()
     except Exception as e:
         print(f"Admin seeding notice: {e}")
     finally:
