@@ -9,6 +9,34 @@ from app.routers.admin import router as admin_router
 # Create / migrate tables on startup
 Base.metadata.create_all(bind=engine)
 
+def seed_admin():
+    from app.db.database import SessionLocal
+    from app.models.user import User
+    from app.core.security import get_password_hash
+    db = SessionLocal()
+    try:
+        admin_exists = db.query(User).filter(User.role == "admin").first()
+        if not admin_exists:
+            default_admin_email = "admin@bustracker.com"
+            existing = db.query(User).filter(User.email == default_admin_email).first()
+            if existing:
+                existing.role = "admin"
+            else:
+                new_admin = User(
+                    name="System Admin",
+                    email=default_admin_email,
+                    hashed_password=get_password_hash(settings.ADMIN_DEFAULT_PASSWORD),
+                    role="admin",
+                )
+                db.add(new_admin)
+            db.commit()
+    except Exception as e:
+        print(f"Admin seeding notice: {e}")
+    finally:
+        db.close()
+
+seed_admin()
+
 app = FastAPI(
     title=settings.PROJECT_NAME,
     description="FastAPI Backend for Bus Tracking & ML Prediction App",

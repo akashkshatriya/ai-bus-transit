@@ -60,7 +60,7 @@ export const LoginPage = () => {
       if (isSignUp) {
         const result = await signup(name.trim(), email.trim(), password);
         showToast(`Welcome, ${result.user?.name || name}! Account created.`, 'success');
-        const targetRoute = result.role === 'driver' ? '/driver' : '/passenger';
+        const targetRoute = result.role === 'driver' ? '/driver' : result.role === 'admin' ? '/admin' : '/passenger';
         navigate(targetRoute, { replace: true });
       } else {
         const result = await login(email.trim(), password);

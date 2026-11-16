@@ -61,7 +61,34 @@ export const Navbar = () => {
             </Link>
           ) : (
             <>
-              {role === 'driver' ? (
+              {role === 'admin' ? (
+                <>
+                  <Link
+                    to="/admin"
+                    className={`px-2.5 sm:px-3 py-1.5 rounded-btn text-xs font-semibold transition-all flex items-center gap-1 sm:gap-1.5 whitespace-nowrap ${
+                      isActive('/admin')
+                        ? 'bg-sage-light text-olive-deep border border-primary'
+                        : 'text-ink-soft hover:text-olive-deep hover:bg-btn-secondary'
+                    }`}
+                  >
+                    <span>⚙️</span>
+                    <span className="hidden sm:inline">Admin Panel</span>
+                    <span className="sm:hidden">Admin</span>
+                  </Link>
+                  <Link
+                    to="/passenger"
+                    className={`px-2.5 sm:px-3 py-1.5 rounded-btn text-xs font-semibold transition-all flex items-center gap-1 sm:gap-1.5 whitespace-nowrap ${
+                      isActive('/passenger')
+                        ? 'bg-sage-light text-olive-deep border border-primary'
+                        : 'text-ink-soft hover:text-olive-deep hover:bg-btn-secondary'
+                    }`}
+                  >
+                    <span>👤</span>
+                    <span className="hidden sm:inline">Passenger View</span>
+                    <span className="sm:hidden">Passenger</span>
+                  </Link>
+                </>
+              ) : role === 'driver' ? (
                 <Link
                   to="/driver"
                   className={`px-2.5 sm:px-3 py-1.5 rounded-btn text-xs font-semibold transition-all flex items-center gap-1 sm:gap-1.5 whitespace-nowrap ${
