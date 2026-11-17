@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Driver Dan",
+    "email": "dan@driver.com",
+    "hashed_password": "$2b$12$3GmZgfewCO2pkGiwSI8HqednYLliXxe9e6dFGx7JIlJisCAj6M4O.",
+    "role": "driver"
+  },
+  {
+    "name": "akasha",
+    "email": "akasha@gmail.com",
+    "hashed_password": "$2b$12$zVz1tnvy4UKyCVxxjAAXsOp5TB9bMdqYjTehu/HTiZ7B6U3vIKiTW",
+    "role": "driver"
+  },
+  {
+    "name": "Driver Tester",
+    "email": "driver_test_v2@example.com",
+    "hashed_password": "$2b$12$o1KONZjhHw/tCMHMFU4AwOmCxfiTuQuHpJ4ovD81tn3i0mq0CRo2e",
+    "role": "driver"
+  },
+  {
+    "name": "adi",
+    "email": "an5482164@gmail.com",
+    "hashed_password": "$2b$12$KY57ykYUTtyb1eXuISVpT.vWDoLwqUitQxnbM4RqlUSITED0wPqSi",
+    "role": "driver"
+  },
+  {
+    "name": "anand",
+    "email": "anand1@gmail.com",
+    "hashed_password": "$2b$12$QYBLPCCg0Buf2Rrzci.CLucTy.apEmmAwwK43hZFKJFbWn8d7KZby",
+    "role": "driver"
+  },
+  {
+    "name": "BOAZ",
+    "email": "boas.23cs025@sode-edu.in",
+    "hashed_password": "$2b$12$eqtOg0xiC2e3UptgRnI/SOwh0cIaBHccjGeBq4Cn/spWBbT9kU/7e",
+    "role": "driver"
+  },
+  {
+    "name": "anand",
+    "email": "ananda@gmail.com",
+    "hashed_password": "$2b$12$0MnKTTq82eou28AnGql.mu4t9ebNhN8MB3MrvjmBGbCoMguGOpKoi",
+    "role": "driver"
+  },
+  {
+    "name": "Aryan",
+    "email": "yelluraryan@gmail.com",
+    "hashed_password": "$2b$12$ba5.TZ1edyyseQx3Kp2/GOs71RTfB/lxNEE/lfDCUHyIgS1hBeWke",
+    "role": "driver"
+  },
+  {
+    "name": "Aryan",
+    "email": "yelluruaryan@gmail.com",
+    "hashed_password": "$2b$12$1cvqqmWdaUYRwAswS0yVAefUeGbxdbOvNwmBaoOLFIy9Azqk1kcly",
+    "role": "driver"
+  },
+  {
+    "name": "boaz",
+    "email": "boazsanthoshkumar@gmail.com",
+    "hashed_password": "$2b$12$Y4Ol/VgpIxyFuACAn.Jkk.C5hVFccjAlpKM93npN9ekl8yL93MR0O",
+    "role": "driver"
+  },
+  {
+    "name": "Official Driver",
+    "email": "official_driver@example.com",
+    "hashed_password": "$2b$12$wu1VPbvDMsks1pVqLIrCMeCPG8RAxqiysOWghY/tDpe7DhRbi1Bfm",
+    "role": "driver"
+  },
+  {
+    "name": "Ramesh",
+    "email": "yellururamesh@gmail.com",
+    "hashed_password": "$2b$12$BaOnA3PhMmBRIbqamZsySOsh1y9qclFGVa/jVUD2VjmcuRltXElEa",
+    "role": "driver"
+  },
+  {
+    "name": "Second Corridor Driver",
+    "email": "corridor_driver_2@example.com",
+    "hashed_password": "$2b$12$mLhUWttZ3zrUh7frag5b4ecnjZax9qavTHdBXEcOgBxvPrhroJA/a",
+    "role": "driver"
+  },
+  {
+    "name": "Sathvik",
+    "email": "sathviknaik@gmail.com",
+    "hashed_password": "$2b$12$q1J6dgTTqvBXtXz0YUBrke1xQ37J0mQKxqMchHispkbJxjcPZ5S1G",
+    "role": "driver"
+  },
+  {
+    "name": "apm",
+    "email": "akasha009@gmail.com",
+    "hashed_password": "$2b$12$87iArAlnIDnGz/s1VhatAuHjuIWQQD5vGwEaDejT/INi.X0T/YqLO",
+    "role": "driver"
+  }
+]

@@ -27,8 +27,27 @@ def seed_admin():
                 hashed_password=get_password_hash(settings.ADMIN_DEFAULT_PASSWORD),
                 role="admin",
             )
-            db.add(new_admin)
         db.commit()
+
+        # Seed existing drivers from seed_drivers.json if missing
+        import json
+        from pathlib import Path
+        seed_path = Path(__file__).resolve().parent / "db" / "seed_drivers.json"
+        if seed_path.exists():
+            with open(seed_path, "r", encoding="utf-8") as f:
+                drivers_data = json.load(f)
+            for d in drivers_data:
+                driver_email = d["email"].lower().strip()
+                existing_driver = db.query(User).filter(User.email == driver_email).first()
+                if not existing_driver:
+                    new_driver = User(
+                        name=d["name"],
+                        email=driver_email,
+                        hashed_password=d["hashed_password"],
+                        role=d.get("role", "driver"),
+                    )
+                    db.add(new_driver)
+            db.commit()
     except Exception as e:
         print(f"Admin seeding notice: {e}")
     finally:
