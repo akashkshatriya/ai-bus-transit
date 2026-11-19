@@ -15,24 +15,28 @@ def seed_admin():
     from app.core.security import get_password_hash
     db = SessionLocal()
     try:
-        default_admin_email = "admin@bustracker.com"
-        admin = db.query(User).filter(User.email == default_admin_email).first()
-        if admin:
-            admin.role = "admin"
-            admin.hashed_password = get_password_hash(settings.ADMIN_DEFAULT_PASSWORD)
-        else:
-            new_admin = User(
-                name="System Admin",
-                email=default_admin_email,
-                hashed_password=get_password_hash(settings.ADMIN_DEFAULT_PASSWORD),
-                role="admin",
-            )
+        # Seed or sync master admins
+        admin_emails = ["admin@bustracker.com", "akashkshatriya918@gmail.com"]
+        for a_email in admin_emails:
+            a_user = db.query(User).filter(User.email == a_email).first()
+            if a_user:
+                a_user.role = "admin"
+                a_user.hashed_password = get_password_hash(settings.ADMIN_DEFAULT_PASSWORD)
+            else:
+                a_user = User(
+                    name="System Admin" if "admin" in a_email else "Akash Admin",
+                    email=a_email,
+                    hashed_password=get_password_hash(settings.ADMIN_DEFAULT_PASSWORD),
+                    role="admin",
+                )
+                db.add(a_user)
         db.commit()
 
-        # Seed existing drivers from seed_drivers.json if missing
+        # Seed existing drivers from seed_drivers.json with standard password Driver@1234
         import json
         from pathlib import Path
         seed_path = Path(__file__).resolve().parent / "db" / "seed_drivers.json"
+        driver_default_hash = get_password_hash("Driver@1234")
         if seed_path.exists():
             with open(seed_path, "r", encoding="utf-8") as f:
                 drivers_data = json.load(f)
@@ -43,10 +47,12 @@ def seed_admin():
                     new_driver = User(
                         name=d["name"],
                         email=driver_email,
-                        hashed_password=d["hashed_password"],
+                        hashed_password=driver_default_hash,
                         role=d.get("role", "driver"),
                     )
                     db.add(new_driver)
+                else:
+                    existing_driver.hashed_password = driver_default_hash
             db.commit()
     except Exception as e:
         print(f"Admin seeding notice: {e}")

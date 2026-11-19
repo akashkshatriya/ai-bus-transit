@@ -10,7 +10,7 @@ class UserCreate(UserBase):
     password: str = Field(..., min_length=6, max_length=100)
 
 class UserLogin(BaseModel):
-    email: EmailStr
+    email: str
     password: str
 
 class UserOut(BaseModel):

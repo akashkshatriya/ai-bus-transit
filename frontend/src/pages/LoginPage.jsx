@@ -6,6 +6,7 @@ import { Card } from '../components/Card';
 import { Button } from '../components/Button';
 import { LoadingSpinner } from '../components/LoadingSpinner';
 import { LockIcon } from '../components/Icons';
+import api from '../services/api';
 
 // Email regex — stricter than just includes('@')
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -24,6 +25,11 @@ export const LoginPage = () => {
   const { login, signup, isAuthenticated, role: userRole, isLoading } = useAuth();
   const { showToast } = useToast();
   const navigate = useNavigate();
+
+  // Pre-warm the backend on Render as soon as user opens login page
+  useEffect(() => {
+    api.get('/health').catch(() => {});
+  }, []);
 
   // If already authenticated, redirect to their role dashboard
   useEffect(() => {
@@ -63,7 +69,7 @@ export const LoginPage = () => {
         const targetRoute = result.role === 'driver' ? '/driver' : result.role === 'admin' ? '/admin' : '/passenger';
         navigate(targetRoute, { replace: true });
       } else {
-        const result = await login(email.trim(), password);
+        const result = await login(email.trim(), password.trim());
         showToast(`Welcome back, ${result.user?.name || email}!`, 'success');
         const targetRoute = result.role === 'driver' ? '/driver' : result.role === 'admin' ? '/admin' : '/passenger';
         navigate(targetRoute, { replace: true });
@@ -71,7 +77,9 @@ export const LoginPage = () => {
     } catch (err) {
       console.error('Auth error:', err);
       let msg;
-      if (err.response && err.response.data && err.response.data.detail) {
+      if (err.code === 'ECONNABORTED' || (err.message && err.message.toLowerCase().includes('timeout'))) {
+        msg = 'Server is waking up (Render free tier takes ~45s to spin up on first request). Please wait a few seconds and try again!';
+      } else if (err.response && err.response.data && err.response.data.detail) {
         if (Array.isArray(err.response.data.detail)) {
           msg = err.response.data.detail[0]?.msg || 'Validation failed. Check your input.';
         } else {
@@ -266,7 +274,7 @@ export const LoginPage = () => {
               {isSubmitting ? (
                 <div className="flex items-center justify-center space-x-2">
                   <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                  <span>Processing...</span>
+                  <span>Connecting (waking server)...</span>
                 </div>
               ) : isSignUp ? (
                 'Create Account'

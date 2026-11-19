@@ -52,7 +52,13 @@ def signup(user_in: UserCreate, db: Session = Depends(get_db)):
 def login(login_in: UserLogin, db: Session = Depends(get_db)):
     user_email = login_in.email.lower().strip()
     user = db.query(User).filter(User.email == user_email).first()
-    if not user or not verify_password(login_in.password, user.hashed_password):
+    raw_pw = login_in.password
+    clean_pw = raw_pw.strip()
+    pw_matches = (
+        verify_password(raw_pw, user.hashed_password) or
+        verify_password(clean_pw, user.hashed_password)
+    ) if user else False
+    if not user or not pw_matches:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Incorrect email or password",
